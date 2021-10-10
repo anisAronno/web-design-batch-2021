@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        form
+        
+       input, label{
+            display: block;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="link" style="text-align: center; margin: 50px;">
+        <h1>This is About Page</h1>
+		<a href="../index.html">Go Index</a><br>
+		<a href="./contact.html">Go Contact</a><br>
+		<a href="./sub/bangledesh.html">Go Bangladesh</a><br>
+	</div>
+
+    <br><br>
+
+    <form action="#">
+        <label for="uName">Name: </label>
+        <input type="text" id="uName" required placeholder="Type our Name">
+        <label for="uEmail">Email: </label>
+        <input type="email" id="uEmail" required value="@gmail.com">
+        <label for="uPassword">Password: </label>
+        <input type="password" id="uPassword" required>
+        <label for="uTelephone">Telephone: </label>
+        <input type="tel" id="uTelephone">
+        <label for="uBirthDay">BirthDay: </label>
+        <input type="date" id="uBirthDay" >
+        <label for="uImage">Image: </label>
+        <input type="file" id="uImage">
+        <label for="uAge">Age: </label>
+        <input type="number" id="uAge" >
+        <label for="uGender">Favourite Color: </label>
+        <input type="color" id="uFavouriteColor">
+        <label for="uGender">Gender: </label>
+        <input style="display: inline;" type="radio" id="uGender" name="uGender" checked><span>Male</span>
+        <input style="display: inline;"  type="radio" id="uGender" name="uGender"><span>Female</span>
+        <br>
+        <input style="display: inline;"type="checkbox" id="RUA" checked>
+        <label style="display: inline;"for="RUA">Are U Agree With Us?  </label>
+        <br>
+        <label for="uDivision">Division</label>
+        <select name="uDivision" id="uDivision">
+            <option value="nj">Dhaka</option>
+            <option value="nk" selected>Comilla</option>
+            <option value="nk">Khulna</option>
+            <option value="nk">Barishal</option>
+        </select>
+        <br>
+        <label for="uMessage">Message</label>
+        <textarea name="uMessage" id="uMessage" cols="30" rows="10"></textarea>
+
+<br>
+<br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
