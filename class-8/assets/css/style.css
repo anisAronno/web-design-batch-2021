@@ -24,14 +24,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
 }
 
 #pixel .pt{
     width: 270px;
     height: 600px;
-    background-color: rgb(175, 15, 15);
+    background-color: rgba(0, 0, 255, 0.1);
     /* margin: 200px 50px 200px 50px; */
     margin: 200px 50px;
     padding: 50px;
     border-bottom: 5px dotted blue;
+    cursor: pointer;
+}
+
+#bgi{
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
