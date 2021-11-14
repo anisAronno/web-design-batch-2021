@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h2{
+    text-shadow: 1px 1px red;
+}
+
+
+.br{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    box-shadow: 10px 10px 5px grey;
+    /* background-image: linear-gradient(to right, red, green, blue); */
+    /* background-image: radial-gradient(red 45%, blue 90%); */
+    opacity: 0.8;
+    border: 10px solid transparent;
+    border-image: url('../images/border.png') 30 round;
+    /* border-radius: 100px 30px 50px; */
+
+    /* background: url(../images/tree-276014_960_720.jpg) right bottom no-repeat, url(../images/download\ \(4\).jfif) top left repeat;  */
+
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 3s; */
+    position: absolute;
+}
+/* 
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  } */
+
+
+@keyframes example{
+    0%{background-color: red; top: 0px; left: 0px;}
+    25%{background-color: blue; top: 0px; left: 800px;}
+    50%{background-color: green; top: 500px; left: 800px;}
+    75%{background-color: yellow; top: 500px; left: 0px;}
+    100%{background-color: red; top: 0px; left: 0px;}
+}
