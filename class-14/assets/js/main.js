@@ -9,6 +9,7 @@ for (let i = 0; i < cls.length; i++) {
     cls[i].style.color = "blue";
 }
 
+
 let testExtraId = document.querySelector(".cls")
 console.log(testExtraId);
 
@@ -36,10 +37,40 @@ btnId.addEventListener('mouseout', function () {
 })
 
 
-let imgId=document.getElementById('imgId')
-let btnImg=document.getElementById('btnImg')
+// let imgId=document.getElementById('imgId')
+// let btnImg=document.getElementById('btnImg')
 
-btnImg.addEventListener("click", function(){
-    imgId.src="./assets/images/download.jfif"
+// btnImg.addEventListener("click", function(){
+//     imgId.src="./assets/images/download.jfif"
+// })
+
+let imgId=$('#imgId')
+let btnImg=$('#btnImg')
+let btnImg2=$('#btnImg2')
+let testHeading=$('#testHeading')
+
+btnImg.click(function(){ 
+    imgId.attr('src', "./assets/images/download.jfif")
+    testHeading.hide(2000)
+})
+
+btnImg2.click(function(){
+    imgId.attr('src', "./assets/images/tree-276014_960_720.jpg")
+    testHeading.show(3000)
+})
+
+
+let pId=$('#pId')
+let fId=$('#fId')
+let pBtn=$('#pBtn') 
+fId.submit(function(event){
+    event.preventDefault() 
+    let nameId=$('#nameId').val();
+    if(nameId.length==0){
+            $('#inpId').html("Name is Empty")
+            $('#inpId').css('color', 'red')
+    }else{
+        pId.text(nameId) 
+    }
 })
 

@@ -42,3 +42,11 @@ h2{
     75%{background-color: yellow; top: 500px; left: 0px;}
     100%{background-color: red; top: 0px; left: 0px;}
 }
+.paraRemoveClass{
+    color: yellow;
+    background-color: red;
+}
+.paraClass{
+    color: red;
+    background-color: #ff0;
+}
